@@ -10,5 +10,6 @@ php bin/console d:m:m
 php bin/console d:f:l
 ```
 
-Username : SuperUser
-Password : 12345
+**Username :** SuperUser
+
+**Password :** 12345
