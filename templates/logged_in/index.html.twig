@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+    {% if app.user %}
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card my-4 logged_card col-10">
+                    <div class="card-body">
+                        <h2 class="text-center">Bienvenue, {{ app.user.username }} !</h2>
+                        <div class="text-center">
+                            <a class="btn btn-primary" href="{{ path('app_logout')}}" tabindex="-1" aria-disabled="true">Déconnexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
